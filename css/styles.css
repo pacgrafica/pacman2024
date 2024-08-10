@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: chartreuse;
+}
+
+.fondo {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+.pacman {
+    top: 0px;
+    left: 450px;
+    z-index: 1;
+    height: 50px;
+    position: relative;
+    animation: game 5s infinite;
+}
+
+@keyframes game {
+    0% {top: 0px; left: -400px; -webkit-transform: rotate(0deg);}
+    10% {top: 0px; left: 450px; -webkit-transform: rotate(0deg);}
+    15% {top: 0px; left: 450px; -webkit-transform: rotate(90deg);}
+    20% {top: 100px; left: 450px; -webkit-transform: rotate(90deg);}
+    25% {top: 100px; left: -400px; -webkit-transform: rotate(180deg);}
+    25% {top: 200px; left: -400px; -webkit-transform: rotate(180deg);}
+}
